@@ -5,7 +5,7 @@
 // source: megolm_ratchet.proto
 
 package proto
-
+    
 import (
 	context "context"
 	grpc "google.golang.org/grpc"
