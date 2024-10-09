@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package megolmratchet;
 
-option go_package = "github.com/Joelwallker/megolm-proto/proto";
+option go_package = "/proto";
 
 service MegolmRatchetService {
     rpc PostData(PostDataRequest) returns (PostDataResponse);
