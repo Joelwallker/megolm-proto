@@ -1,4 +1,4 @@
-module github.com/Joelwallker/megolm-proto/proto
+module github.com/Joelwallker/megolm-proto
 
 go 1.22.4
 
