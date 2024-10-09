@@ -1,6 +1,5 @@
 module github.com/Joelwallker/megolm-proto
 
-
 go 1.22.4
 
 require (
