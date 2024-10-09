@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package megolmratchet;
+
+option go_package = "gitlab.com/Joelwallker/megolm-proto/proto";
+
+service MegolmRatchetService {
+    rpc PostData(PostDataRequest) returns (PostDataResponse);
+    rpc GetData(GetDataRequest) returns (GetDataResponse);
+    rpc AppendData(AppendDataRequest) returns (AppendDataResponse);
+}
+
+message PostDataRequest {
+    string data = 1;
+}
+
+message PostDataResponse {
+    string session_id = 1;
+}
+
+message GetDataRequest {
+    string session_id = 1;
+}
+
+message GetDataResponse {
+    repeated string data = 1;
+}
+
+message AppendDataRequest {
+    string session_id = 1;
+    string data = 2;
+}
+
+message AppendDataResponse {
+    bool success = 1;
+}
